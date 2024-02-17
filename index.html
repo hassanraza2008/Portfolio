@@ -174,12 +174,26 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
+                    <!--
                     <form action="/portfolio web/assets/php/contact.php" method="POST" class="contact__form">
                         <input type="text" placeholder="Name" class="contact__input" name="name">
                         <input type="email" placeholder="Email" class="contact__input" name="email">
                         <textarea placeholder="Message" class="contact__input" name="message" rows="7" cols="30"></textarea>
                         <input type="submit" value="Enviar" class="contact__button button">
-                    </form>                    
+                    </form> 
+                    -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+
+                        <input type="hidden" name="access_key" value="0643b566-ae54-4cd7-8c0a-6eb129196035">
+
+                        <input type="text" placeholder="Name" class="contact__input" name="name" >
+                        <input type="email" placeholder="Email" class="contact__input" name="email">
+                        <textarea placeholder="Message" class="contact__input" name="message" rows="7" cols="30"></textarea>
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <input type="submit" value="Enviar" class="contact__button button">
+                    </form> 
+                    
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
                 </div>
             </section>
         </main>
