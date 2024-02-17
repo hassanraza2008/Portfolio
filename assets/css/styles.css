@@ -342,6 +342,10 @@ img {
   margin-left: auto;
 }
 
+.h-captcha {
+  margin-bottom: var(--mb-4);
+}
+
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
